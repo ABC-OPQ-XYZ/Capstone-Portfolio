@@ -1,0 +1,213 @@
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  font-family: "Manufacturing Consent";
+  text-align: center;
+  color: #FFFFFF;
+}
+header,
+footer {
+background-color: black;
+}
+footer {
+  height: 50px;
+}
+.navbar {
+  margin: 20px;
+}
+header p {
+  padding: 10px;
+  margin-bottom: -10px;
+  border-bottom: 2px solid yellow;
+}
+.topmain {
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 149, 255);
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+#pfp {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200%;
+  border: 15px solid rgb(217, 255, 0);
+  margin-bottom: 50px;
+  transition: all 1s;
+} 
+#pfp:hover {
+  transform: rotate(1000000000deg) scale(2);
+}
+.roundcontainer {
+  background-color: rgb(0, 0, 141);
+  color: white;
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 20px;
+}
+.borderall {
+  border-bottom: 2px solid yellow;
+}
+.margintop {
+  margin-top: 20px;
+}
+.maintoptext h1 {
+  padding-top: 10px;
+  font-size: 2rem;
+}
+#stuff {
+  background-color: blue;
+  padding-top: 50px;
+}
+.projects{
+  color: blue;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+}
+.projecttext {
+  display: none;
+}
+
+.projects:hover {
+  .projecttext {
+    display: flex;
+    flex-direction: row;
+    background-color: #2386ff;
+    margin-bottom: 0;
+    height: 25%;
+  }
+}
+.projecttext p {
+  margin-right: auto;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.projecttext button {
+  border-radius: 100%;
+  background-color: blue;
+}
+.projecttext button a {
+  color: yellow;
+}
+.projectimg {
+  position: absolute;
+}
+#project1 {
+background-image: url("imgs/photogallery.png");
+}
+#project2 {
+  background-image: url("imgs/register.png");
+}
+#project3 {
+  background-image: url("imgs/wheel.png");
+}
+#project4 {
+  background-image: url("imgs/employee.png");
+}
+.contactlinks {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+#contact a {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: yellow;
+  padding: 5px;
+  width: 100px;
+}
+#backtotop{
+  font-size: 1rem;
+  padding-top: 10px;
+}
+#overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: #FFFFFF;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px; 
+  background-image: url('imgs/overlay.png');
+}
+#overlay h1 {
+  font-size: 5rem;
+  background-color: rgb(0, 0, 127);
+}
+#hideoverlay {
+  color: rgb(0, 0, 127);
+  font-size: 3rem;
+}
+.text {
+  color: yellow;
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header p, header nav {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  header p {
+    margin-right: auto;
+    margin-left: 30px;
+    border:none
+  }
+  header nav {
+    margin-right: 30px;
+  }
+  .navbar a {
+    margin: 10px;
+  }
+  #about p {
+    width: 85%;
+  }
+  #projectsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  .contactlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contactlinks a {
+    margin-left: 1px;
+    margin-right: 1px; 
+  }
+}
+@media (min-width: 1024px) {
+ #about p {
+  width: 70%;
+ }
+  #pfp {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (min-width: 1356px) {
+  #projectsgrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #pfp {
+    width: 400px;
+    height: auto;
+  }
+}
